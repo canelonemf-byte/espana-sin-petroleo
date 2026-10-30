@@ -1,42 +1,52 @@
 # espana-sin-petroleo
 
-España sin petróleo: hoja de ruta y gemelo digital de descarbonización.
+# espana-sin-petroleo  España sin petróleo: hoja de ruta y gemelo digital de descarbonización.  **Autor:** Lázaro López Paz · **Licencia:** MIT (ver `LICENSE`)
 
-**Autor:** Lázaro López Paz · **Licencia:** MIT (ver `LICENSE`)
+## Autoría
 
-## Carpetas de origen en Google Drive
+- **Autor:** Lázaro López Paz, El Prat de Llobregat, Barcelona, España
+- **ORCID:** [0000-0001-8601-1963](https://orcid.org/0000-0001-8601-1963)
+- Elaborado con asistencia de inteligencia artificial
+- Sin afiliaciones institucionales
 
-- https://drive.google.com/drive/folders/1apLiGHng0INnEFXyOuuqtsBEkvOMgJIl
+## Estado
 
-## Archivos incluidos
+Proyecto en desarrollo / documentación. No afirmar validación experimental salvo que el código o los informes del propio repositorio lo demuestren.
 
-- `app_estrategia.py` ← app_estrategia.py
-- `docs/Python_eliminar_petroleo_en_Espana.md` ← Python eliminar petróleo en España 
-- `docs/requirements.md` ← requirements
-- `proyecto_espana_unificado.txt` ← proyecto_espana_unificado.txt
+## Contenido (raíz)
 
-## Pendiente: en Drive
+```
+app_estrategia.py
+data/
+DATOS_PENDIENTES.md
+datos_pendientes.yaml
+docs/
+eurostat_es/
+LICENSE
+proyecto_espana_unificado.txt
+README.md
+REFERENCIAS.md
+requirements.txt
+tests/
+```
 
-Archivos binarios (presentaciones, PDFs grandes, vídeos, imágenes, zips, docx) que no se pudieron pasar a texto. Siguen en Drive:
+## Instalación
 
-- Digital_Twin_Spain_Decarbonization_Roadmap.pdf · pendiente: en Drive · https://drive.google.com/file/d/1iU2jJkzMvTMG791dTgGagXV9aZ66M__T/view?usp=drivesdk
-- Digital_Twin_Spain_Decarbonization_Roadmap.pptx · pendiente: en Drive · https://docs.google.com/presentation/d/1giKnQb1iArLS8-l1Y-JLQ8ovXD_ULKvV/edit?usp=drivesdk&ouid=104725215047766891127&rtpof=true&sd=true
-- España_sin_dependecia_del_petróleo.mp4 · pendiente: en Drive · https://drive.google.com/file/d/1o6hGREz7BEBbt3q16qIxKDrfmk9UQnUa/view?usp=drivesdk
-- España_sin_petróleo.pdf · pendiente: en Drive · https://drive.google.com/file/d/1rvlAeC7TzG244MQI1cgQ4bb_jkjoVQ7b/view?usp=drivesdk
-- España_sin_petróleo.pptx · pendiente: en Drive · https://docs.google.com/presentation/d/1-ExzGKIdajzhtvTKKwWnQKiIDE1FJLIz/edit?usp=drivesdk&ouid=104725215047766891127&rtpof=true&sd=true
-- SHORTS-Spain’s_High-Tech_Strategy_to_Kill_Oil.mp4 · pendiente: en Drive · https://drive.google.com/file/d/1U4-gIvmUrxL4Aq61SX7RWQpNqsNYRihE/view?usp=drivesdk
-- Spain_National_Decarbonization_Strategy_Roadmap.png · pendiente: en Drive · https://drive.google.com/file/d/1VKi8t5oRz_cjty9eBbwp6eLEjgQyUErl/view?usp=drivesdk
-- Transición_energética_en_España.png · pendiente: en Drive · https://drive.google.com/file/d/1rY_5LBP7E-lr3ZTst_8pXL0ScUA1scqD/view?usp=drivesdk
+```bash
+pip install -r requirements.txt
+```
 
-### Subcarpetas no importadas (pendiente: en Drive)
 
-- GitHub SUVIR · https://drive.google.com/drive/folders/1gnsWbZdKH-NGUV6wrcyeqWiSMC2rVJK8
+## Uso
 
----
-Los archivos `.trashed-*`, las copias («- copia») y los duplicados entre carpetas no se han listado.
+Archivos Python principales (revisar cada uno antes de ejecutar):
+- `app_estrategia.py`
+- `eurostat_es/__init__.py`
+- `eurostat_es/pendientes.py`
+- `tests/conftest.py`
+- `tests/test_eurostat_es.py`
 
-## Módulo funcional `eurostat_es` (esperando datos)
 
-eurostat_es: datos reales de Eurostat para España (energía bruta disponible de petróleo y total en ktep, y dependencia importadora del petróleo en %), descargados de la API pública y guardados en data/eurostat_es.json. Con ellos calcula la trayectoria lineal de reducción hacia el objetivo del usuario.
+## Licencia
 
-`pip install -r requirements.txt && python -m pytest -q`. Los datos que faltan están en [DATOS_PENDIENTES.md](DATOS_PENDIENTES.md).
+Ver archivo `LICENSE` (o `LICENSE.md`) en la raíz. Documentación bajo CC BY 4.0 cuando aplique; código habitualmente MIT, salvo indicación contraria.
